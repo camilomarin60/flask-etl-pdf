@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block content %}
+<form action="{{ url_for('main.upload_file') }}" method="POST" enctype="multipart/form-data">
+    <label for="file">Selecciona un archivo PDF:</label>
+    <input type="file" name="file" id="file" accept=".pdf" required>
+    <button type="submit">Subir y Procesar</button>
+</form>
+{% endblock %}

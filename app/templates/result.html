@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Contenido del PDF</h2>
+<pre>{{ text }}</pre>
+<a href="{{ url_for('main.upload_page') }}">Subir otro archivo</a>
+{% endblock %}
